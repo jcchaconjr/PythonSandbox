@@ -1,6 +1,6 @@
 from operator import itemgetter
 
-def sortAndPrint(listToSort):
+def sortAndPrint(listToSort):  # This implies a list of Dictionaries...
     listToSort = sorted(listToSort, key=itemgetter('rank'))
     for rankedCity in listToSort:
         print(f"{rankedCity["rank"]}. {rankedCity["city"]}")
